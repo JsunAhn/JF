@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>JF error occurred.</title>
+  <style>
+    .errorBox { border:1px dotted red;width:700px;padding:10px;background:#f3edd9;font-size:9pt; }
+    .errorBox h4 { font-size:12pt; padding-left:10px;}
+    .errorBox ul { padding:0;;}
+    .errorBox ul li { padding-left:20px;list-style: none; }
+  </style>
+</head>
+<body>
+  <div class="errorBox">
+    <h4>JF error occurred.</h4>
+    <ul>
+      <li>Type : <b><?=$data['err_type']?></b></li>
+      <li>Date : <?=$data['err_date']?></li>
+      <li>Uri : <?=$data['err_uri']?></li>
+      <li>Source : <b><?=$data['err_file']?></b> of <b><?=$data['err_line']?></b> Line</li>
+      <li>Message : <?=$data['err_msg']?></li>
+      <li>Remote : <?=$data['err_remote']?></li>
+    </ul>
+  </div>
+</body>
+</html>

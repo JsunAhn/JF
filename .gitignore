@@ -1,1 +1,6 @@
 .idea/
+JF_DOC/
+vendor/
+comproser.phar
+build.sh
+JF_temp/
