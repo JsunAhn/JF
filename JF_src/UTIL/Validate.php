@@ -31,7 +31,7 @@ class Validate{
     }
 
     //숫자검사
-    public static function isNumber($number, $msg, $msg_type = "er_msg") {
+    public static function isNumber($number) {
         if(preg_match("/^\d+$/", $number)) {
             return true;
         }else{

@@ -86,7 +86,8 @@ class FileTransfer{
             if($file_name && file_exists($dest_path)) {
                 $newfList['name'] = $file_name;
                 $newfList['source'] = $file_source;
-                $newfList['dest_path'] = $dest_path;
+                $newfList['destPath'] = $dest_path;
+                $newfList['webPath'] = str_replace($_SERVER['DOCUMENT_ROOT'],"",$dest_path);
                 $newfList['size'] = $file_size;
                 $newfList['type'] = $file_type;
                 $newfList['error'] = $file_error;

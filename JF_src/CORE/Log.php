@@ -11,6 +11,11 @@ namespace JF\CORE;
 
 class Log{
 
+    //로그 쓰기
+    static public function write($message){
+
+    }
+
     static public function errorLogWrite($message){
 
 
