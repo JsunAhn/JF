@@ -1,6 +1,9 @@
 .idea/
 JF_DOC/
 vendor/
-comproser.phar
+*.phar
 build.sh
 JF_temp/
+JF_temp/build_num.txt
+Thumbs.db
+ehthumbs.db
